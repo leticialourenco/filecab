@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+::-moz-selection { 
+	
+}
+
+::selection { 
+	
+}
+
+.wrapper {
+	height: 100vh;
+}
+
+.app-download {
+	background: #1a98c6;
+	height: 82%;
+	padding: 5%;
+}
+
+.logo {
+	width: 150px;
+}
+
+h4 {
+	margin: 50px 0 30px;
+	color: #ffd200;
+	font-size: 90%;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+h1 {
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: 40px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.desc {
+	font-size: 90%;
+	color: #fff;
+	opacity: 0.5;
+	line-height: 20px;
+	letter-spacing: 0;
+	width: 300px;
+	margin-bottom: 50px;
+}
+
+.button {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 700;
+	border: solid 1px #fff;
+	border-radius: 50px;
+	padding: 10px 35px;
+}
+
+.button span {
+	padding-left: 3px;
+	font-size: 85%;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+	background: #fff;
+	color: #444;
+	text-decoration: none;
+}
+
+.footer {
+	background: #fff;
+	height: 18%;
+	font-size: 80%;
+	color: #ababab;
+}
+
+.footer p {
+	padding: 10% 0;
+}
+
+.footer span {
+	padding-left: 30px;	
+}
+
+.footer a {
+	text-transform: uppercase;
+	font-size: 9px;
+	font-weight: 900;
+	color: #ababab;
+}
+
+.footer a:hover,
+.footer a:active,
+.footer a:focus {
+	text-decoration: none;
+	color: #444;
+}
