@@ -33,7 +33,7 @@ body {
 
 .demo {
 	width: 1000px;
-	margin-left: -23em;
+	margin-left: -36em;
 }
 
 .app-download {
@@ -139,3 +139,80 @@ h1 {
 	-webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
 }
+/*
+@media only screen 
+and (min-device-width : 1200px) 
+and (max-device-width : 1350px)  {
+	.demo {
+		margin-left: -30em;
+	}
+}*/
+
+@media (min-width: 1200px){
+	.demo {
+		margin-left: -30em;
+	}
+}
+
+@media (min-width: 1351px){
+	.demo {
+		margin-left: -23em;
+	}
+}
+
+@media (min-width: 1651px){
+	.demo {
+		margin-left: -12em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+
+}
+
+/* iPad models
+ */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+}
+
+/* iPhone 6, 6S, 7
+ */
+@media (max-width: 767px){
+
+}
+
+/* iPhone 5, 5S
+ */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+
+}
+
