@@ -121,7 +121,7 @@ h1 {
 }
 
 .footer span {
-	padding-left: 0px;	
+	padding-left: 10px;	
 }
 
 .footer a {
@@ -139,14 +139,9 @@ h1 {
 	-webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
 }
-/*
-@media only screen 
-and (min-device-width : 1200px) 
-and (max-device-width : 1350px)  {
-	.demo {
-		margin-left: -30em;
-	}
-}*/
+
+/* Desktop variations - asc
+ */
 
 @media (min-width: 1200px){
 	.demo {
@@ -166,53 +161,55 @@ and (max-device-width : 1350px)  {
 	}
 }
 
+/* Mobile variations - des
+ */
 
+@media (max-width: 992px){
+	.container {
+		padding-right: 0;
+	}
 
+	.demo {
+		display: none;
+	}
 
+	.desc {
+    	max-width: 300px;
+    	margin: 0 auto 50px;
+    	font-size: 99%;
+	}
+	
+	h1 {
+		font-size: 31px;
+		line-height: 36px;
+	}
 
+	.app-download,
+	.footer {
+		text-align: center;
+	}
 
+	.app-download {
+		padding: 3em 0 4em;
+	}
 
+	.footer .container {
+		padding-left: 0;
+	}
 
+	.footer p {
+		padding: 4em 0;
+		line-height: 25px;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1024px){
-
+	.footer span {
+		padding-left: 0;	
+	}
 }
 
-/* iPad models
- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  {
-
-}
-
-/* iPhone 6, 6S, 7
- */
-@media (max-width: 767px){
-
-}
-
-/* iPhone 5, 5S
- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) {
-
+@media (max-width : 350px) {
+	.desc {
+		max-width: 275px;
+	}
 }
 
