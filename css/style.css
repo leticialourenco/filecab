@@ -7,22 +7,49 @@ body {
 	letter-spacing: 1px;
 }
 
+.row {
+	margin-right: 0;
+}
+
 ::-moz-selection { 
-	
+	color: #fff;
+	background: #444;
+	opacity: 1;
 }
 
 ::selection { 
-	
+	color: #fff;
+	background: #444;
+	opacity: 1;
 }
 
 .wrapper {
 	height: 100vh;
 }
 
+.demo-container {
+	position: fixed;
+}
+
+.demo {
+	width: 1000px;
+	margin-left: -23em;
+}
+
 .app-download {
-	background: #1a98c6;
-	height: 82%;
-	padding: 5%;
+	background-image: url('../images/geo-pattern.png');
+	padding: 7em 0 8em;
+}
+
+.app-download-underlay {
+	background: rgba(18,115,163,1);
+	background: -moz-linear-gradient(45deg, rgba(18,115,163,1) 0%, rgba(72,153,194,1) 57%, rgba(75,214,227,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(18,115,163,1)), color-stop(57%, rgba(72,153,194,1)), color-stop(100%, rgba(75,214,227,1)));
+	background: -webkit-linear-gradient(45deg, rgba(18,115,163,1) 0%, rgba(72,153,194,1) 57%, rgba(75,214,227,1) 100%);
+	background: -o-linear-gradient(45deg, rgba(18,115,163,1) 0%, rgba(72,153,194,1) 57%, rgba(75,214,227,1) 100%);
+	background: -ms-linear-gradient(45deg, rgba(18,115,163,1) 0%, rgba(72,153,194,1) 57%, rgba(75,214,227,1) 100%);
+	background: linear-gradient(45deg, rgba(18,115,163,1) 0%, rgba(72,153,194,1) 57%, rgba(75,214,227,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1273a3', endColorstr='#4bd6e3', GradientType=1 );
 }
 
 .logo {
@@ -77,21 +104,24 @@ h1 {
 	background: #fff;
 	color: #444;
 	text-decoration: none;
+	-webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
 }
 
 .footer {
 	background: #fff;
-	height: 18%;
 	font-size: 80%;
 	color: #ababab;
 }
 
 .footer p {
-	padding: 10% 0;
+	padding: 5em 0;
+	margin-left: -7px;
+	line-height: 20px;
 }
 
 .footer span {
-	padding-left: 30px;	
+	padding-left: 0px;	
 }
 
 .footer a {
@@ -106,4 +136,6 @@ h1 {
 .footer a:focus {
 	text-decoration: none;
 	color: #444;
+	-webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
 }
