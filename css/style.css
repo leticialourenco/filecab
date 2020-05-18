@@ -30,11 +30,13 @@ body {
 .content-background {	
 	padding: 0;
 	background: #1e71ad;
+	background: url('../images/filecab-demo.png') no-repeat left bottom #1e71ad;
+	background-size: 70vw; 
 }
 
 .content {
-	text-align: left;
-	padding: 8em 0;
+	text-align: center;
+	padding: 8em 0 30em;
 }
 
 .logo {
@@ -69,7 +71,18 @@ h1 {
 	color: #fff;
 	line-height: 22px;
 	letter-spacing: 1px;
-	margin-bottom: 50px;
+	margin: 0 auto 50px;
+	max-width: 450px;
+	background: rgba(255, 255, 255, .08);
+	border: solid 1px white;
+	border-radius: 4px;
+	padding: 2em;
+	list-style: inside;
+	list-style-type: "\003E  ";
+}
+
+.desc li {
+	text-align: left;
 }
 
 .button {
@@ -107,24 +120,26 @@ h1 {
 	padding: 5em 0;
 	margin-left: -7px;
 	line-height: 20px;
+	text-align: center;
+	font-size: 10px;
 }
 
 .footer span {
-	padding-left: 10px;	
+	padding-right: 10px;	
 }
 
 .footer a {
 	text-transform: uppercase;
 	font-size: 9px;
 	font-weight: 900;
-	color: #ababab;
+	color: #1fa1ff;
 }
 
 .footer a:hover,
 .footer a:active,
 .footer a:focus {
 	text-decoration: none;
-	color: #444;
+	color: white;
 	-webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
 }
