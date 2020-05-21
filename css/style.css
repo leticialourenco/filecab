@@ -6,10 +6,6 @@ body {
 	font-size: 15px;
 }
 
-.row {
-	margin-right: 0;
-}
-
 ::-moz-selection { 
 	color: #fff;
 	background: #444;
@@ -22,25 +18,20 @@ body {
 	opacity: 1;
 }
 
-
-.demo {
-	width: 100%;
-}
-
 .content-background {	
 	padding: 0;
 	background: #1e71ad;
 	background: url('../images/filecab-demo.png') no-repeat left bottom #1e71ad;
-	background-size: 70vw; 
+	background-size: 100vw; 
 }
 
 .content {
 	text-align: center;
-	padding: 8em 0 30em;
+	padding: 8em 0 25em;
 }
 
 .logo {
-	width: 150px;
+	width: 175px;
 }
 
 h4 {
@@ -142,4 +133,28 @@ h1 {
 	color: white;
 	-webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
+}
+
+@media (min-width: 992px) { 
+	.content-background {	
+		background-size: 70vw; 
+	}
+}
+/*	custom media query value not bootstrap predef 
+@media (min-width: 1400px) { 
+	.content-background {	
+		background-size: 70vw; 
+	}
+}*/
+/*	custom media query value not bootstrap predef */
+@media (min-width: 1700px) { 
+	.content-background {	
+		background-size: 60vw; 
+	}
+}
+/*	custom media query value not bootstrap predef */
+@media (min-width: 2000px) { 
+	.content-background {	
+		background-size: 50vw; 
+	}
 }
