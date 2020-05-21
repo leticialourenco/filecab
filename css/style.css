@@ -4,6 +4,7 @@ body {
 	font-weight: 400;
 	letter-spacing: 1px;
 	font-size: 15px;
+	overflow-x: hidden;
 }
 
 ::-moz-selection { 
@@ -21,8 +22,8 @@ body {
 .content-background {	
 	padding: 0;
 	background: #1e71ad;
-	background: url('../images/filecab-demo.png') no-repeat left bottom #1e71ad;
-	background-size: 100vw; 
+	background: url('../images/filecab-demo.png') no-repeat -5em bottom #1e71ad;
+	background-size: 115vw; 
 }
 
 .content {
@@ -135,17 +136,50 @@ h1 {
     transition: 0.5s all ease;
 }
 
-@media (min-width: 992px) { 
-	.content-background {	
-		background-size: 70vw; 
+/*	incremental media queries   */
+/*	custom media query value not bootstrap predef */
+/*	manual adjustments for tiny devices */
+@media (max-width: 485px) {
+	.content {
+		padding: 5em 10px 20em;
+	}
+
+	h1 {
+		font-size: 33px;
+		line-height: 33px;
+	}
+
+	.desc {
+		padding: 20px;
 	}
 }
-/*	custom media query value not bootstrap predef 
-@media (min-width: 1400px) { 
-	.content-background {	
-		background-size: 70vw; 
+@media (min-width: 576px) {
+	.content {
+		padding: 8em 0 35em;
 	}
-}*/
+	.content-background {
+		background-position: -8em bottom;
+	}
+}
+@media (min-width: 768px) {
+	.content {
+		padding: 8em 0 40em;
+	}
+}
+@media (min-width: 992px) { 
+	.content-background {	
+		background-size: 70vw;
+		background-position: -15em bottom;
+	}
+	.content {
+		padding: 5em 0;
+	}
+}
+@media (min-width: 1200px) { 
+	.content-background {	
+		background-position: -18em bottom;
+	}
+}
 /*	custom media query value not bootstrap predef */
 @media (min-width: 1700px) { 
 	.content-background {	
@@ -156,5 +190,8 @@ h1 {
 @media (min-width: 2000px) { 
 	.content-background {	
 		background-size: 50vw; 
+	}
+	.content {
+		padding: 10	em 0;
 	}
 }
